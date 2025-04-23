@@ -20,14 +20,14 @@ header {
   align-items: center;
   padding: 25px;
   background: linear-gradient(to right, #111, #1c1c1c);
-  box-shadow: 0 4px 12px rgba(0, 216, 255, 0.3);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.15);
 }
 
 .glow-title {
   font-size: 32px;
   font-weight: bold;
-  color: #00d8ff;
-  text-shadow: 0 0 10px #00d8ff;
+  color: #ffffff;
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.8);
 }
 
 /* Hero */
@@ -40,7 +40,13 @@ header {
   width: 300px;
   border-radius: 20px;
   margin-bottom: 30px;
-  box-shadow: 0 0 35px rgba(0, 216, 255, 0.5);
+  box-shadow: 0 0 35px rgba(255, 255, 255, 0.6);
+  transition: all 0.4s ease;
+}
+
+.hero img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 45px rgba(255, 255, 255, 0.9);
 }
 
 .hero-text h1 {
@@ -56,19 +62,20 @@ header {
 
 /* Social Buttons with Icons */
 .social-buttons {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .social-buttons a {
-  color: #00d8ff;
-  font-size: 32px;
+  color: #ffffff;
+  font-size: 36px;
   margin: 0 15px;
-  transition: transform 0.3s ease, color 0.3s ease;
+  transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
 }
 
 .social-buttons a:hover {
   transform: scale(1.2);
-  color: #02f0ff;
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 1);
 }
 
 /* Resume Image */
@@ -86,13 +93,13 @@ header {
   max-width: 800px;
   margin-top: 10px;
   border-radius: 20px;
-  box-shadow: 0 0 35px rgba(0, 216, 255, 0.6);
+  box-shadow: 0 0 35px rgba(255, 255, 255, 0.6);
   transition: transform 0.3s ease;
 }
 
 .resume-section img.glow-img:hover {
   transform: scale(1.03);
-  box-shadow: 0 0 45px rgba(0, 216, 255, 0.9);
+  box-shadow: 0 0 45px rgba(255, 255, 255, 0.9);
 }
 
 /* Footer */
@@ -103,6 +110,8 @@ footer {
   color: #888;
   margin-top: 60px;
 }
+
+/* Download Resume Button */
 .download-btn {
   display: inline-block;
   margin-top: 20px;
@@ -113,37 +122,13 @@ footer {
   font-weight: bold;
   text-decoration: none;
   transition: all 0.3s ease;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.6);
 }
 
 .download-btn:hover {
   background-color: #02f0ff;
   transform: scale(1.05);
-}
-
-/* Social icon buttons */
-.social-buttons {
-  margin-top: 30px;
-}
-
-.social-buttons a {
-  color: #00d8ff;
-  font-size: 36px;
-  margin: 0 15px;
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.social-buttons a:hover {
-  transform: scale(1.2);
-  color: #02f0ff;
-}
-
-/* Animate resume + profile */
-.hero img, .glow-img {
-  transition: all 0.4s ease;
-}
-
-.hero img:hover, .glow-img:hover {
-  transform: scale(1.03);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.9);
 }
 
 /* Animations when loading */
