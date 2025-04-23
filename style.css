@@ -1,0 +1,198 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global */
+body {
+  background-color: #0a0a0a;
+  color: #f0f0f0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  background: linear-gradient(to right, #111, #1c1c1c);
+  box-shadow: 0 4px 12px rgba(0, 216, 255, 0.3);
+}
+
+.glow-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #00d8ff;
+  text-shadow: 0 0 10px #00d8ff;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero img {
+  width: 300px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 35px rgba(0, 216, 255, 0.5);
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #ccc;
+}
+
+/* Social Buttons with Icons */
+.social-buttons {
+  margin-top: 20px;
+}
+
+.social-buttons a {
+  color: #00d8ff;
+  font-size: 32px;
+  margin: 0 15px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-buttons a:hover {
+  transform: scale(1.2);
+  color: #02f0ff;
+}
+
+/* Resume Image */
+.resume-section {
+  margin-top: 50px;
+}
+
+.resume-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.resume-section img.glow-img {
+  width: 80%;
+  max-width: 800px;
+  margin-top: 10px;
+  border-radius: 20px;
+  box-shadow: 0 0 35px rgba(0, 216, 255, 0.6);
+  transition: transform 0.3s ease;
+}
+
+.resume-section img.glow-img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 45px rgba(0, 216, 255, 0.9);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 30px 10px;
+  background-color: #111;
+  color: #888;
+  margin-top: 60px;
+}
+.download-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #00d8ff;
+  color: black;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #02f0ff;
+  transform: scale(1.05);
+}
+
+/* Social icon buttons */
+.social-buttons {
+  margin-top: 30px;
+}
+
+.social-buttons a {
+  color: #00d8ff;
+  font-size: 36px;
+  margin: 0 15px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-buttons a:hover {
+  transform: scale(1.2);
+  color: #02f0ff;
+}
+
+/* Animate resume + profile */
+.hero img, .glow-img {
+  transition: all 0.4s ease;
+}
+
+.hero img:hover, .glow-img:hover {
+  transform: scale(1.03);
+}
+
+/* Animations when loading */
+.hero-text, .resume-section {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.hero-text {
+  animation-delay: 0.2s;
+}
+
+.resume-section {
+  animation-delay: 0.6s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .hero img {
+    width: 80%;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+  }
+
+  .social-buttons a {
+    font-size: 28px;
+    margin: 10px;
+  }
+
+  .download-btn {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .resume-section img.glow-img {
+    width: 95%;
+  }
+}
